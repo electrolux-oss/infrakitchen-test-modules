@@ -1,3 +1,7 @@
+provider "aws" {
+  region = var.region
+}
+
 locals {
   engine = can(regex("^redis", var.family)) ? "redis" : "valkey"
 }

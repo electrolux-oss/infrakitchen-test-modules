@@ -10,9 +10,8 @@ variable "account" {
 }
 
 variable "master_account_id" {
-  description = "Account ID allowed to assume CI/CD roles"
+  description = "Account ID that will assume the role in this account"
   type        = string
-  default     = "000000000000"
 }
 
 variable "environment_name" {

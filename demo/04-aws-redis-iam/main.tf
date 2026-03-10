@@ -1,3 +1,7 @@
+provider "aws" {
+  region = var.region
+}
+
 data "aws_iam_policy_document" "redis_connect" {
   statement {
     effect = "Allow"
